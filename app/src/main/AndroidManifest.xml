@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trupti.mensfashiontipsone">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.trupti.mensfashiontipsone.Activity.MainActivity"
+            android:parentActivityName="com.trupti.mensfashiontipsone.Activity.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"></activity>
+
+        <activity
+            android:name="com.trupti.mensfashiontipsone.Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.trupti.mensfashiontipsone.Activity.DiscriptionActivity"
+            android:parentActivityName="com.trupti.mensfashiontipsone.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"></activity>
+        <activity
+            android:name="com.trupti.mensfashiontipsone.Activity.AppHubActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity android:name="com.trupti.mensfashiontipsone.Activity.BAckAppActivity"
+
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"></activity>
+        <activity
+            android:name="com.trupti.mensfashiontipsone.Activity.StartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" ></activity>
+    </application>
+
+</manifest>

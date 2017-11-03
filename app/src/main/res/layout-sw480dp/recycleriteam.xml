@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/apps_imgs_iv"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/bff"
+
+
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/apps_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="@string/bff_friendship_app_test" />
+
+</LinearLayout>

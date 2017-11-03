@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/round">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="More Apps(Ads)"
+        android:background="@drawable/roundedexit"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerexit"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="60dp"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/lvimg1"
+            android:layout_weight="1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bff"
+
+
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/bff_friendship_app_test"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/lvimg2">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/blendme"
+                android:background="@drawable/logo"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textView"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:lines="2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/blend_me_pic_editor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/lvimg3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/fingerlogo"
+                android:id="@+id/img3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/logo" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/fingerprint"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/lv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv1"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/lvimg4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/vastu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/logo"
+                />
+
+            <TextView
+                android:lines="2"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/vastu_shastra_tips_for_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/lvimg5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/cooking"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/logo"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:lines="2"
+                android:text="@string/cooking_tips_sweet_spicy"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/jockes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/logo" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="@string/jockes_read_enjoy" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/lvimg6"
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lv2">
+
+
+        <Button
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:id="@+id/btncancel"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/roundexit"/>
+
+        <Button
+
+            android:id="@+id/btnexit"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:text="exit"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/roundexit"
+            />
+    </LinearLayout>
+</RelativeLayout>
